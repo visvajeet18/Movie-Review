@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Movies | CineScope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">CineScope</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html" class="active">Movies</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="top-rated.html">Top Rated</a></li>
+            <li><a href="trailers.html">Trailers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="section-title">Explore Movies</h2>
+
+        <div class="search-container" style="max-width: 600px; margin: 0 auto 2rem; position: relative;">
+            <input type="text" id="search-input" placeholder="Search for movies..."
+                style="width: 100%; padding: 1rem 1.5rem; border-radius: 50px; border: 1px solid var(--primary-color); background: var(--surface-color); color: #fff; font-size: 1rem; outline: none;">
+            <span
+                style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--primary-color);">🔍</span>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-genre="All">All</button>
+            <button class="filter-btn" data-genre="Action">Action</button>
+            <button class="filter-btn" data-genre="Sci-Fi">Sci-Fi</button>
+            <button class="filter-btn" data-genre="Drama">Drama</button>
+            <button class="filter-btn" data-genre="Crime">Crime</button>
+            <button class="filter-btn" data-genre="Anime">Anime</button>
+            <button class="filter-btn" data-genre="Fantasy">Fantasy</button>
+            <button class="filter-btn" data-genre="Horror">Horror</button>
+            <button class="filter-btn" data-genre="Thriller">Thriller</button>
+            <button class="filter-btn" data-genre="Romance">Romance</button>
+            <button class="filter-btn" data-genre="Comedy">Comedy</button>
+            <button class="filter-btn" data-genre="Tamil" style="border-color: #ff9f43; color: #ff9f43;">Tamil</button>
+            <button class="filter-btn" data-genre="Telugu"
+                style="border-color: #ff9f43; color: #ff9f43;">Telugu</button>
+            <button class="filter-btn" data-genre="Kannada"
+                style="border-color: #ff9f43; color: #ff9f43;">Kannada</button>
+            <button class="filter-btn" data-genre="Malayalam"
+                style="border-color: #ff9f43; color: #ff9f43;">Malayalam</button>
+            <button class="filter-btn" data-genre="Hindi" style="border-color: #ff9f43; color: #ff9f43;">Hindi</button>
+        </div>
+
+        <div class="movie-grid" id="movie-grid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+</body>
+
+</html>

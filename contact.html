@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CineScope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">CineScope</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="top-rated.html">Top Rated</a></li>
+            <li><a href="trailers.html">Trailers</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>We'd love to hear from you!</h3>
+                <p>Have a question, suggestion, or just want to say hi? Fill out the form below and we'll get back to
+                    you as soon as possible.</p>
+
+                <div class="info-item">
+                    <strong>Email:</strong> support@cinescope.com
+                </div>
+                <div class="info-item">
+                    <strong>Location:</strong> Trichy
+                </div>
+                <div class="info-item">
+                    <strong>By:</strong> Visvajeet
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <span class="error-msg" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your@email.com" required>
+                        <span class="error-msg" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <span class="error-msg" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <div id="success-message" class="success-message" style="display: none;">
+                        Message sent successfully! We'll be in touch.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

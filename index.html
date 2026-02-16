@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineScope | Interactive Movie Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">CineScope</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="top-rated.html">Top Rated</a></li>
+            <li><a href="trailers.html">Trailers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover & Share <br> Cinematic Masterpieces</h1>
+            <p>Your ultimate destination for movie reviews, trailers, and top-rated charts. Join the community and share
+                your thoughts.</p>
+            <a href="movies.html" class="btn-primary">Explore Movies</a>
+        </div>
+    </header>
+
+    <section id="trending">
+        <h2 class="section-title">Trending Now</h2>
+        <div class="movie-grid" id="trending-grid">
+            <!-- Movies injected via JS -->
+            <div class="loading-spinner">Loading...</div>
+        </div>
+    </section>
+
+</body>
+
+</html>

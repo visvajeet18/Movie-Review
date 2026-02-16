@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailers | CineScope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        .trailer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .trailer-card {
+            background: var(--surface-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .trailer-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .trailer-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .trailer-info {
+            padding: 1rem;
+        }
+
+        .trailer-title {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">CineScope</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="top-rated.html">Top Rated</a></li>
+            <li><a href="trailers.html" class="active">Trailers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2 class="section-title">Latest Trailers</h2>
+
+        <div class="trailer-grid" id="trailer-grid">
+            <!-- Populated by JS -->
+            <div class="loading-spinner">Loading Trailers...</div>
+        </div>
+    </section>
+</body>
+
+</html>

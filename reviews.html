@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | CineScope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">CineScope</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="top-rated.html">Top Rated</a></li>
+            <li><a href="trailers.html">Trailers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="section-title">Community Reviews</h2>
+
+        <div class="reviews-container">
+            <div class="review-form-container">
+                <h3>Write a Review</h3>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="movie-select">Select Movie</label>
+                        <select id="movie-select" required>
+                            <!-- Populated by JS -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="star-rating">
+                            <span data-value="1">★</span>
+                            <span data-value="2">★</span>
+                            <span data-value="3">★</span>
+                            <span data-value="4">★</span>
+                            <span data-value="5">★</span>
+                        </div>
+                        <input type="hidden" id="rating-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-text">Your Review</label>
+                        <textarea id="review-text" rows="4" required placeholder="What did you think?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Review</button>
+                </form>
+            </div>
+
+            <div class="reviews-list" id="reviews-list">
+                <!-- Reviews injected here -->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
