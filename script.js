@@ -1026,11 +1026,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <iframe 
                             width="100%" 
                             height="100%" 
-                            src="https://www.youtube.com/embed/${trailerId}" 
+                            src="https://www.youtube.com/embed/${trailerId}?enablejsapi=1&origin=https://visvajeet18.github.io" 
                             title="YouTube video player"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin"
                             allowfullscreen>
                         </iframe>
                     </div>
