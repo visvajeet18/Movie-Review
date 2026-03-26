@@ -30,7 +30,9 @@
 }
 
 body {
-    background: var(--background-color);
+    background: linear-gradient(-45deg, #10002b, #190033, #0d001a, #240046);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     color: var(--text-primary);
     min-height: 100vh;
     overflow-x: hidden;
@@ -199,16 +201,39 @@ section {
 }
 
 .movie-card {
-    background: var(--surface-color);
-    border-radius: 12px;
+    background: rgba(36, 0, 70, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(199, 125, 255, 0.2);
+    border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.movie-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: skewX(-20deg);
+    transition: all 0.6s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.movie-card:hover::after {
+    left: 200%;
+}
+
 .movie-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 25px rgba(157, 78, 221, 0.4);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(157, 78, 221, 0.5);
+    border-color: rgba(199, 125, 255, 0.6);
 }
 
 .movie-poster {
@@ -284,18 +309,13 @@ section {
 
 /* Reviews Page */
 .reviews-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .reviews-container {
-        grid-template-columns: 1fr;
-    }
-}
 
 .review-form-container {
     background: var(--surface-color);
@@ -334,14 +354,20 @@ section {
 }
 
 .star-rating span {
-    font-size: 2rem;
-    color: #5a189a;
-    transition: color 0.2s;
+    font-size: 2.5rem;
+    color: rgba(90, 24, 154, 0.5);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.star-rating span:hover {
+    transform: scale(1.2);
 }
 
 .star-rating span.filled {
-    color: #ff9100;
-    /* Orange stars stand out nicely against purple */
+    color: #ffd700;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
 }
 
 .review-item {
@@ -404,4 +430,65 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Background gradient animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUpScale {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes revealScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Scroll Reveal Utility Classes */
+.hidden-scroll {
+    opacity: 0 !important;
+    visibility: hidden;
+}
+
+.anim-fade-up {
+    animation: fadeInUpScale 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    visibility: visible;
+}
+
+.anim-slide-left {
+    animation: slideInLeft 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    visibility: visible;
+}
+
+.anim-scale {
+    animation: revealScale 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    visibility: visible;
 }

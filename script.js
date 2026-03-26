@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     try {
         // --- expanded Movie Data ---
         const movies = [
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "English",
                 year: 2014,
                 rating: 4.7,
-                image: "https://image.tmdb.org/t/p/w500/gEU2QniL6E8AHtMY4kOuxZnOleo.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkshzpfsh566sD5Im2qzFxaxfNFFqSQAFZgg&s",
                 description: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
             },
             {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "English",
                 year: 1972,
                 rating: 4.9,
-                image: "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enUSpvz9hPRbv5Z.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8F9hpABISwNl4sXh8a2lpL-EoQ7EUkDYicQ&s",
                 description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
             },
             {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "English",
                 year: 1999,
                 rating: 4.8,
-                image: "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7Qf4n6a8M9lQ.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqemAmLdNRNnl4AcnGooXXspzddtDSkz5OyA&s",
                 description: "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more."
             },
             {
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "English",
                 year: 2003,
                 rating: 5.0,
-                image: "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3vpX3uzwdcf9.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaeVNzU-AoPhjtWxxhIEDSjuV9eMjvLi6cQ&s",
                 description: "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
             },
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Japanese",
                 year: 2001,
                 rating: 4.9,
-                image: "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUKGnSxQbYTl.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6H35bhkBVrM9PmybmW_zEvFbe1CZ4G6WDnw&s",
                 description: "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits."
             },
             {
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Japanese",
                 year: 2016,
                 rating: 4.8,
-                image: "https://image.tmdb.org/t/p/w500/glNzvArQV7T7Z4rfvDR0z2qW7I9.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6i-DwiJ_EIbNuU4G0DMrWuPmwgyDaZ4XOw&s",
                 description: "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?"
             },
             {
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Japanese",
                 year: 1988,
                 rating: 4.7,
-                image: "https://image.tmdb.org/t/p/w500/neZ0UxArCpZIUuQkAPfPiv1Bny.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDR-rFYHP-JDKX-rg0D01PcW6hSlv0ua6kjw&s",
                 description: "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath."
             },
 
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2023,
                 rating: 4.2,
-                image: "https://m.media-amazon.com/images/M/MV5BMjYyZTIyN2YtNzYyOC00YTYyLWE0YTItY2ExMWViODVkMjM3XkEyXkFqcGdeQXVyODQxMTI4MjM@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dHxLyFCmuqtMxnGwPf0WNtJ2NQT5HavjUA&s",
                 description: "Mild-mannered café owner Parthiban is pursued by gangsters who suspect him to be a former drug lord."
             },
             {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2022,
                 rating: 4.6,
-                image: "https://m.media-amazon.com/images/M/MV5BMmJhYTYxMGEtNjQ5NS00MWZiLWEwN2ItYjJmMWE2YTU1YTRhXkEyXkFqcGdeQXVyNCExMjk4Mzk@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-6V86ZBh3Oz83Nmb3Ph67r2axrI2S3dEsQ&s",
                 description: "A special agent investigates a murder committed by a masked group of serial killers. A drug lord awaits."
             },
             {
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2023,
                 rating: 4.3,
-                image: "https://m.media-amazon.com/images/M/MV5BNzQxYzE1MTEtZmI4My00ZGRjLTk1YjYtOTI4YjI2YjcyOTRiXkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI1ARUMzj-s9Y55zhIKGFL002QxX-cpJvDCg&s",
                 description: "A retired jailer goes on a manhunt to find his son's killers."
             },
             {
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2019,
                 rating: 4.8,
-                image: "https://m.media-amazon.com/images/M/MV5BMTM3NjE4Njc1OV5BMl5BanBnXkFtZTgwNTU4NTU1MjE@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzzJHxupxbXbpwNCASsBBv0IKEIA1k6WM-jg&s",
                 description: "A recently released prisoner races against time to drive poisoned cops to a hospital while gangsters chase him."
             },
             {
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Telugu",
                 year: 2017,
                 rating: 4.8,
-                image: "https://image.tmdb.org/t/p/w500/21sC2assIm2mtGJd43rqXLnZscn.jpg",
+                image: "https://upload.wikimedia.org/wikipedia/en/9/93/Baahubali_2_The_Conclusion_poster.jpg",
                 description: "When Shiva, the son of Bahubali, learns about his heritage, he begins to look for answers."
             },
             {
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Kannada",
                 year: 2022,
                 rating: 4.5,
-                image: "https://image.tmdb.org/t/p/w500/kh4fcGJNS8Ba0qMcP4iVbb51Rz2.jpg",
+                image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/K.G.F_Chapter_2.jpg/250px-K.G.F_Chapter_2.jpg",
                 description: "In the blood-soaked Kolar Gold Fields, Rocky's name strikes fear into his foes."
             },
             {
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Kannada",
                 year: 2022,
                 rating: 4.8,
-                image: "https://image.tmdb.org/t/p/w500/vnXpM01tW32aQn4u2FSI5N3J34J.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4sBaD3K-dyBBfsHWirfIruNQhcFyk32zSIA&s",
                 description: "When greed paves the way for betrayal, scheming and murder, a young tribal reluctantly dons the traditions of his ancestors."
             },
             {
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2019,
                 rating: 4.7,
-                image: "https://m.media-amazon.com/images/M/MV5BYzA0Nzg0MDYtMzdhNS00YzYzLTk0ZGQtMWYxZTY2ZWM4NWRkXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTffZX3y3TKRSE2RtYuXDGX4QfLz6KskBujzg&s",
                 description: "The teenage son of a farmer from an underprivileged caste kills a rich, upper caste landlord."
             },
             {
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2018,
                 rating: 4.7,
-                image: "https://m.media-amazon.com/images/M/MV5BMjA4NzUyNDk4NV5BMl5BanBnXkFtZTgwODk2NzM5NjE@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDM93QVO_30mBluQRlk7vH48Lmig7x-gZwxQ&s",
                 description: "A skilled carrom player steps into the world of crime and joins forces with local gangsters to settle their feuds."
             },
             {
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2018,
                 rating: 4.6,
-                image: "https://image.tmdb.org/t/p/w500/1o8q2v7p8Q5j9w5f9x7z8k9j2.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3TOnc_3IiVxlNcmWStwDURklZU02h8GbRfg&s",
                 description: "Two high school sweethearts meet at a reunion after 22 years and remember their past."
             },
             {
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2018,
                 rating: 4.9,
-                image: "https://m.media-amazon.com/images/M/MV5BNTI2OWU3YmEtM2LzZi00OGQ0NGFiNzctYmJlOTliMzVjYzViXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgSqUs2MbEhdx8jIjHw9PdNPRdftwpHB3pTQ&s",
                 description: "A sub-inspector sets out to track down a mysterious serial killer who targets teen school girls and murders them brutally."
             },
             {
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2012,
                 rating: 4.5,
-                image: "https://m.media-amazon.com/images/M/MV5BZTc4YjJhYTYtMzY5YS00M2ViLWE2MzUtYTcwM2ZlY2RlYTc4XkEyXkFqcGdeQXVyODQxMTI4MjM@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHvkOHiPZK5whGs96sWMSFl9RVmJFYqQsJw&s",
                 description: "An army captain visits Mumbai to be with his family and find a suitable bride."
             },
             {
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2011,
                 rating: 4.4,
-                image: "https://m.media-amazon.com/images/M/MV5BODQ0N2Y3YmMtZWY5NS00ZGM2LWE1YzUtODllYTRmYzc0ZGE2XkEyXkFqcGdeQXVyODk1MzE5ODY@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6IoBzTuy-g2XCICUhLSWi-VWDCGYl47hJ4Q&s",
                 description: "A suspended inspector Vinayak Mahadevan falls in love with the daughter of a powerful gangster."
             },
             {
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2007,
                 rating: 4.3,
-                image: "https://m.media-amazon.com/images/M/MV5BYzExMGY2NDItZmE5NC00MzU4LWIwOGQtYzBmYTllNzY0OGY0XkEyXkFqcGdeQXVyOTk3NTc2MzE@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1iTH7YQkeJOdR8LT_1-FwY7yyULDFn6O4lA&s",
                 description: "A software engineer arrives in India to serve the nation and invest in the people's welfare."
             },
             {
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2010,
                 rating: 4.3,
-                image: "https://image.tmdb.org/t/p/w500/74205N4gQ2u4i3d5q78j7h6.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7Kw3u23ptYOammkgV2f3PEL8-UjXh-w4aA&s",
                 description: "A brilliant scientist builds a humanoid robot to protect the mankind, but things go wrong when human emotions are programmed."
             },
             {
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2021,
                 rating: 4.0,
-                image: "https://m.media-amazon.com/images/M/MV5BNmU1OTYzYzAtMDcyOS00MDI0LTg2ZmQtYTEyMDdmMmQ0MjY5XkEyXkFqcGdeQXVyOTk3NTc2MzE@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfMOYpxU-Mm-hGkqGtUSJs6WAlbddyEKME5A&s",
                 description: "An alcoholic professor is sent to a juvenile school, where he clashes with a gangster who uses the school children for criminal activities."
             },
             {
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2020,
                 rating: 4.8,
-                image: "https://m.media-amazon.com/images/M/MV5BOGJjMDM3ZGEtNDc3Yi00ZmU1LTg2ZGMtMTA3MGQ0ZWYwYmJlXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRyM6Jw8vZ6VeIXN8Ja2ia7YPO7W3DUuX7g&s",
                 description: "Nedumaaran Rajangam sets out to make the common man fly and in the process takes on the world's most capital intensive industry."
             },
             {
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2021,
                 rating: 4.9,
-                image: "https://m.media-amazon.com/images/M/MV5BY2Y5ZWMwZDgtZDQxYy00Mjk0LThhY2YtMmU1MTRmMjVhMjRiXkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_.jpg",
+                image: "https://m.media-amazon.com/images/M/MV5BY2Y5ZWMwZDgtZDQxYy00Mjk0LThhY2YtMmU1MTRmMjVhMjRiXkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_FMjpg_UX1000_.jpg",
                 description: "When a tribal man is arrested for a case of alleged theft, his wife turns to a human-rights lawyer to help bring justice."
             },
             {
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2021,
                 rating: 4.6,
-                image: "https://m.media-amazon.com/images/M/MV5BYjI1ODFhMTctNzM4MC00M2IwLWExMGMtZjY4ZWQ4Y2NhYjQ4XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHxxQDPlS9B_fncqsF_fpwNGKQOpiVLQdLA&s",
                 description: "Karnan, a fearless village youth, must fight for the rights of the people of his village."
             },
             {
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Telugu",
                 year: 2024,
                 rating: 4.5,
-                image: "https://image.tmdb.org/t/p/w500/1QO0t9Hk3qc4l7Y1k8U2q7W9.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6cTjiNMh2JnCc76UPr2S0FN0y_iOhXoOhw&s",
                 description: "Pushpa Raj rules the smuggling syndicate, but old enemies and new threats challenge his reign."
             },
             {
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Malayalam",
                 year: 2024,
                 rating: 4.7,
-                image: "https://image.tmdb.org/t/p/w500/j9NfP0T4s9s0j3Cq0v6w5n2m8X0.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXqTUx6n_6Mc8S4nDwVvhylf6_Gswo1aF-mw&s",
                 description: "A group of friends gets into a daring rescue mission to save their friend from Guna Caves."
             },
             {
@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Telugu",
                 year: 2024,
                 rating: 4.2,
-                image: "https://image.tmdb.org/t/p/w500/kJxJGNKzH7sD4o8g6K1jE3r3tQ.jpg",
+                image: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Hanu_Man_film_Release_poster.jpeg/250px-Hanu_Man_film_Release_poster.jpeg",
                 description: "An imaginary place called Anjanadri where the protagonist gets the powers of Hanuman and fights for Anjanadri."
             },
             {
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Hindi",
                 year: 2009,
                 rating: 4.9,
-                image: "https://image.tmdb.org/t/p/w500/66A9MqXOyVh9URsAd9kU5DsjZ.jpg",
+                image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/3_idiots_poster.jpg/250px-3_idiots_poster.jpg",
                 description: "Two friends search for their long lost companion. They revisit their college days and recall the memories."
             },
             {
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2024,
                 rating: 4.3,
-                image: "https://m.media-amazon.com/images/M/MV5BNTI4YjM3ZYtMTAzMy00M2E1LTk2YzctOTE3NDYxNzY1NzY1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWtvY1aJJaSbT9tvmUQaa3qgSA5Wa2Oo3xGQ&s",
                 description: "A special anti-terrorist squad leader is haunted by the death of his son, and years later, his past comes back to haunt him."
             },
             {
@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2024,
                 rating: 4.8,
-                image: "https://upload.wikimedia.org/wikipedia/en/b/b2/Amaran_2024_poster.jpg",
+                image: "https://upload.wikimedia.org/wikipedia/en/5/54/Amaran_2024_poster.jpg",
                 description: "The life of Major Mukund Varadarajan and his heroism in the Indian Army."
             },
             {
@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Telugu",
                 year: 2023,
                 rating: 4.5,
-                image: "https://upload.wikimedia.org/wikipedia/en/a/a2/Salaar_Part_1_–_Ceasefire.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRO4SP6-5D9xQKlRFNBNJLn5cmdoJv7G_VpQ&s",
                 description: "A gang leader tries to keep a promise made to his dying friend and takes on the other criminal gangs."
             },
             {
@@ -424,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2024,
                 rating: 4.8,
-                image: "https://m.media-amazon.com/images/M/MV5BNzQ2YzczMDEtYWY3Ny00YmY5LTg4MDYtYmQ3ODdiY2FhY2FhXkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqJh_4m9JZakawI3F_5e0Kelixg6BAihgnBw&s",
                 description: "A barber seeks vengeance after his home is burglarized, cryptically telling police his 'Lakshmi' has been taken."
             },
             {
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Tamil",
                 year: 2024,
                 rating: 4.4,
-                image: "https://m.media-amazon.com/images/M/MV5BMjA5OTEwMGMtM2I5ZC00MTY2LWEwOGMtN2I5OTEwMGMtM2I5ZC00MTY2LWEwOGMt._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOgyI5bbbmNHUojlalHDdMLUOUmC1a8qtXQ&s",
                 description: "A young man gets pulled into the world of crime in North Chennai."
             },
             {
@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Malayalam",
                 year: 2015,
                 rating: 4.9,
-                image: "https://m.media-amazon.com/images/M/MV5BMzY5NTdjMDMtZDY1My00NjcyLThiZGMtYjgwNzFjZGYxM2I5XkEyXkFqcGdeQXVyMjkxNzQ1NjI@._V1_.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG3XOjIZ7vs9q0yY9Ug1b-fsSLlaczbcEOog&s",
                 description: "George, a teenager, loves Malar. But his romantic journey takes him through several stages, helping him find his purpose."
             },
             {
@@ -454,7 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Malayalam",
                 year: 2021,
                 rating: 4.8,
-                image: "https://upload.wikimedia.org/wikipedia/en/d/dc/Drishyam_2.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHItdPkkei9Kgvhc-FKQDBMUnkCvnwNWxzeg&s",
                 description: "A gripping tale of an investigation and a family which is threatened by it. Will Georgekutty be able to protect his family this time?"
             },
             {
@@ -464,10 +464,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 language: "Hindi",
                 year: 2016,
                 rating: 4.9,
-                image: "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5N9jm1sQJlGGMJddhJsL3J4W4cm50_oPthw&s",
                 description: "Former wrestler Mahavir Singh Phogat and his two wrestler daughters struggle towards glory at the Commonwealth Games in the face of societal oppression."
             }
         ];
+
+        // Load custom movies from localStorage
+        try {
+            const customMovies = JSON.parse(localStorage.getItem('cinescope_custom_movies')) || [];
+            if (customMovies.length > 0) {
+                movies.push(...customMovies);
+            }
+        } catch(e) {
+            console.log('Error loading custom movies.', e);
+        }
 
         // --- DOM Elements ---
         const trendingGrid = document.getElementById('trending-grid');
@@ -483,6 +493,57 @@ document.addEventListener('DOMContentLoaded', () => {
         const movieSelect = document.getElementById('movie-select');
         const starInput = document.getElementById('rating-input');
         const stars = document.querySelectorAll('.star-rating span');
+
+        // --- Intersection Observer for Scroll Animations ---
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const animClass = el.dataset.animation || 'anim-fade-up';
+                    
+                    if (el.dataset.delay) {
+                        el.style.animationDelay = el.dataset.delay;
+                    }
+                    
+                    el.classList.add(animClass);
+                    el.classList.remove('hidden-scroll');
+                    observer.unobserve(el);
+                }
+            });
+        }, observerOptions);
+
+        function initStaticAnimations() {
+            // Section Titles
+            document.querySelectorAll('.section-title').forEach(title => {
+                title.classList.add('hidden-scroll');
+                title.dataset.animation = 'anim-slide-left';
+                scrollObserver.observe(title);
+            });
+            
+            // Hero Content
+            const heroContent = document.querySelector('.hero-content');
+            if(heroContent) {
+                heroContent.classList.add('hidden-scroll');
+                heroContent.dataset.animation = 'anim-fade-up';
+                scrollObserver.observe(heroContent);
+            }
+
+            // Contact / Review blocks
+            document.querySelectorAll('.contact-info, .contact-form-wrapper, .review-form-container').forEach((block, index) => {
+                block.classList.add('hidden-scroll');
+                block.dataset.animation = 'anim-scale';
+                block.dataset.delay = `${(index % 2) * 0.2}s`;
+                scrollObserver.observe(block);
+            });
+        }
+        
+        // Initialize static elements immediately
+        initStaticAnimations();
 
         // --- Helper Functions ---
 
@@ -521,6 +582,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const createMovieCard = (movie, rank = null) => {
             const card = document.createElement('div');
             card.classList.add('movie-card');
+
+            // Make card clickable for redirection to reviews
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => {
+                window.location.href = `reviews.html?movie=${encodeURIComponent(movie.title)}`;
+            });
 
             let rankBadge = '';
             if (rank) {
@@ -574,10 +641,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             movieList.forEach((movie, index) => {
                 const card = createMovieCard(movie, withRank ? index + 1 : null);
-                // Add animation delay for stagger effect
-                card.style.animation = `fadeIn 0.5s ease forwards ${index * 0.05}s`;
-                card.style.opacity = '0';
+                
+                // Add to scroll observer instead of playing immediately
+                card.classList.add('hidden-scroll');
+                card.dataset.animation = 'anim-fade-up';
+                card.dataset.delay = `${(index % 10) * 0.05}s`; // Stagger based on column index
+                
                 container.appendChild(card);
+                scrollObserver.observe(card);
             });
         }
 
@@ -585,17 +656,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1. Home Page (Trending)
         if (trendingGrid) {
-            // Show mix of popular movies, prioritizing new ones (ID > 25)
-            const newReleases = movies.filter(m => m.id > 25);
+            // Custom movies have massive IDs (Date.now())
+            const customMovies = movies.filter(m => m.id > 1000000).sort((a,b) => b.id - a.id);
+            const newReleases = movies.filter(m => m.id > 25 && m.id < 1000000);
             const others = movies.filter(m => m.id <= 25);
 
-            // Shuffle both
+            // Shuffle default movies
             const shuffledNew = [...newReleases].sort(() => 0.5 - Math.random());
             const shuffledOthers = [...others].sort(() => 0.5 - Math.random());
 
-            // Combine: 3 New + 1 Other
-            const trending = [...shuffledNew.slice(0, 3), ...shuffledOthers.slice(0, 1)];
-            renderMovies(trending, trendingGrid);
+            // Combine: Custom movies first, then pad with New + Other to fill 4 slots
+            let trending = [...customMovies];
+            
+            // Fill remaining slots
+            const neededNew = Math.max(0, 3 - trending.length);
+            trending = [...trending, ...shuffledNew.slice(0, neededNew)];
+            
+            const neededOther = Math.max(0, 4 - trending.length);
+            trending = [...trending, ...shuffledOthers.slice(0, neededOther)];
+            
+            // Limit exactly to 4 for visual grid consistency
+            renderMovies(trending.slice(0, 4), trendingGrid);
         }
 
         // 2. Movies Page (All Movies + Search)
@@ -685,6 +766,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     option.textContent = movie.title;
                     movieSelect.appendChild(option);
                 });
+
+                // Check for 'movie' query parameter to pre-select
+                const urlParams = new URLSearchParams(window.location.search);
+                const movieParam = urlParams.get('movie');
+                if (movieParam) {
+                    // Decode if necessary, though URLSearchParams handles mostly
+                    // Find option with available value
+                    // Try to match exact title
+                    for (let i = 0; i < movieSelect.options.length; i++) {
+                        if (movieSelect.options[i].value === movieParam) {
+                            movieSelect.selectedIndex = i;
+                            break;
+                        }
+                    }
+                }
             }
 
             // Star Rating Capability
@@ -708,12 +804,77 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            // Load Reviews from LocalStorage
+            // Load Reviews from API
             loadReviews();
+
+            // Handle Add Movie Submission
+            const addMovieForm = document.getElementById('add-movie-form');
+            if (addMovieForm) {
+                addMovieForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    const title = document.getElementById('new-movie-title').value;
+                    const image = document.getElementById('new-movie-image').value;
+                    const rating = document.getElementById('new-movie-rating').value;
+                    const language = document.getElementById('new-movie-lang').value;
+                    const genre = document.getElementById('new-movie-genre').value;
+                    const description = document.getElementById('new-movie-desc').value;
+                    
+                    const btn = addMovieForm.querySelector('button');
+                    const originalText = btn ? btn.textContent : 'Add Movie';
+                    if (btn) {
+                        btn.textContent = 'Adding...';
+                        btn.disabled = true;
+                    }
+                    
+                    try {
+                        const newMovie = {
+                            id: Date.now(),
+                            title, image, rating: parseFloat(rating), language, genre, description, year: new Date().getFullYear()
+                        };
+                        
+                        // Save to localStorage
+                        const customMovies = JSON.parse(localStorage.getItem('cinescope_custom_movies')) || [];
+                        customMovies.push(newMovie);
+                        localStorage.setItem('cinescope_custom_movies', JSON.stringify(customMovies));
+                        
+                        alert('Movie added successfully! You can now write a review for it.');
+                        addMovieForm.reset();
+                        
+                        // Add to global movies array dynamically
+                        movies.push(newMovie);
+                        
+                        // Try to update dropdown if it exists
+                        if (movieSelect) {
+                            const option = document.createElement('option');
+                            option.value = newMovie.title;
+                            option.textContent = newMovie.title;
+                            movieSelect.appendChild(option);
+                            
+                            // Re-sort options alphabetically
+                            const options = Array.from(movieSelect.options);
+                            options.sort((a,b) => a.text.localeCompare(b.text));
+                            movieSelect.innerHTML = '';
+                            options.forEach(opt => movieSelect.appendChild(opt));
+                            
+                            // Select the newly added movie
+                            movieSelect.value = newMovie.title;
+                        }
+                    } catch (err) {
+                        console.error("Failed to add movie:", err);
+                        alert("Failed to save movie data locally.");
+                    }
+                    
+                    if (btn) {
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                    }
+                });
+            }
 
             // Handle Review Submission
             if (reviewForm) {
-                reviewForm.addEventListener('submit', (e) => {
+                reviewForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     const movieTitle = movieSelect.value;
                     const rating = starInput.value;
@@ -724,13 +885,22 @@ document.addEventListener('DOMContentLoaded', () => {
                         return;
                     }
 
-                    // Create Review Review
-                    addReview(movieTitle, rating, text);
-                    saveReview(movieTitle, rating, text);
+                    const btn = reviewForm.querySelector('button');
+                    const originalText = btn ? btn.textContent : 'Submit';
+                    if (btn) {
+                        btn.textContent = 'Submitting...';
+                        btn.disabled = true;
+                    }
+
+                    await saveReview(movieTitle, rating, text);
 
                     // Reset Form
                     reviewForm.reset();
                     updateStars(0);
+                    if (btn) {
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                    }
                 });
             }
         }
@@ -756,32 +926,53 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        function saveReview(title, rating, text) {
-            const newReview = { title, rating, text, date: new Date().toISOString() };
-            let reviews = JSON.parse(localStorage.getItem('cinescope_reviews')) || [];
-            reviews.unshift(newReview); // Add to beginning
-            localStorage.setItem('cinescope_reviews', JSON.stringify(reviews));
+        async function saveReview(title, rating, text) {
+            try {
+                const newReview = { 
+                    movie_title: title, 
+                    rating: parseInt(rating), 
+                    review_text: text, 
+                    created_at: new Date().toISOString() 
+                };
+                let reviews = JSON.parse(localStorage.getItem('cinescope_reviews')) || [];
+                reviews.unshift(newReview); // Add to beginning
+                localStorage.setItem('cinescope_reviews', JSON.stringify(reviews));
+                
+                // Remove "No reviews yet" message if it exists
+                const p = reviewsList.querySelector('p');
+                if (p && p.textContent.includes('No reviews yet')) {
+                    reviewsList.innerHTML = '';
+                }
+                addReview(title, rating, text, true);
+            } catch (err) {
+                console.error("Failed to save review:", err);
+                alert("Failed to save review locally.");
+            }
         }
 
-        function loadReviews() {
+        async function loadReviews() {
             if (!reviewsList) return;
 
-            let reviews = JSON.parse(localStorage.getItem('cinescope_reviews')) || [];
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const movieParam = urlParams.get('movie');
+                
+                let reviews = JSON.parse(localStorage.getItem('cinescope_reviews')) || [];
+                
+                reviewsList.innerHTML = '';
+                
+                if (movieParam) {
+                    reviews = reviews.filter(r => r.movie_title === movieParam);
+                }
 
-            // If no reviews exist, add some defaults and save them (optional, but good for demo)
-            if (reviews.length === 0) {
-                const defaultReviews = [
-                    { title: "Inception", rating: 5, text: "Mind-blowing visuals and story! A must watch." },
-                    { title: "Spirited Away", rating: 5, text: "A masterpiece of animation. Ghibli magic at its finest." },
-                    { title: "Parasite", rating: 4, text: "A very interesting take on society and class struggle." }
-                ];
-                // Don't save defaults to user storage to keep it clean, just show them? 
-                // Better to show defaults if empty, but not save them so we don't pollute storage.
-                // But user asked to "store user review in one page", so let's just display defaults if nothing is there.
-
-                defaultReviews.forEach(r => addReview(r.title, r.rating, r.text, false)); // Append defaults
-            } else {
-                reviews.forEach(r => addReview(r.title, r.rating, r.text, false)); // Append stored reviews
+                if (reviews.length === 0) {
+                    reviewsList.innerHTML = '<p style="color:var(--text-secondary); text-align:center; padding: 2rem;">No reviews yet. Be the first to review!</p>';
+                } else {
+                    reviews.forEach(r => addReview(r.movie_title, r.rating, r.review_text, false)); 
+                }
+            } catch (err) {
+                console.error("Failed to load reviews:", err);
+                reviewsList.innerHTML = '<p style="color: red;">Error loading reviews.</p>';
             }
         }
 
@@ -829,10 +1020,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 let content = '';
 
                 if (trailerId) {
-                    // If we have a real ID, embed it
+                    // Update: Using the exact "Share -> Embed" code requested by the user
                     content = `
                     <div class="trailer-container">
-                        <iframe src="https://www.youtube.com/embed/${trailerId}" allowfullscreen loading="lazy"></iframe>
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/${trailerId}" 
+                            title="YouTube video player"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 `;
                 } else {

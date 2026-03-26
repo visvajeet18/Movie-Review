@@ -19,7 +19,13 @@
             background: var(--surface-color);
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: var(--shadow-soft);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .trailer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(157, 78, 221, 0.4);
         }
 
         .trailer-container {
